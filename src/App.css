@@ -1,26 +1,202 @@
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 .App {
-  padding: 20px;;
+  padding: 20px;
 }
 
-nav.navbar { 
+.logo {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 8vw;
+  height: 100vh;
   display: flex;
-  padding: 0px 20px;
-  background: #686de0; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  align-content: center;
+  text-decoration: none;
+  animation-name: animatedLogo;
+  animation-duration: 5s;
 }
 
-button.navbar-button {
-  padding: 5px 20px;
-  width: 100px;
-  margin: 15px 10px;
-  border-radius: 3px;
+@keyframes animatedLogo {
+  0% {
+    opacity: 0%;
+    font-size: 6vw;
+  }
+  100% {
+    opacity: 100%;
+    font-size: 8vw;
+  }
 }
+
+.link {
+  text-decoration: none;
+}
+
+nav.navbar {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+  background: transparent;
+  border-bottom: 1px solid whitesmoke;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+}
+
 
 #home-btn {
-  color: white;
+  color: black;
   text-decoration: none;
+
+}
+
+.login {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.labelform {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3vh;
+ 
+}
+
+.divform {
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: flex-start;
+ padding-top: 8px;
+  border-bottom: 1px solid gainsboro;
+  width: 100vw;
+  background-color: whitesmoke;
+  margin-bottom: 3vh;
+}
+
+.submit {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  border: none;
+  background-color: black;
+  width: 100vw;
+  height: 4vh;
+
+}
+input:focus {
+  outline: none;
+  background-color: whitesmoke;
+  
+}
+
+.inputForm {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  border: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-bottom: 0.5vh;
+}
+
+.redirectButton {
+  font-family:"Raleway", sans-serif;
+}
+
+.signup {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
+}
+
+
+h4 {
+  margin: 0;
+}
+.userdata {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  padding-bottom: 5px;
+  padding-top: 5px;
+ 
+}
+
+.userdataText {
+  margin-left: 5vw;
+}
+
+.favTitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw;
+  display: flex;
+  justify-content: center;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.favorites {
+  /*display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+  align-content: flex-start;
+  background-color: white;*/
+  
+  line-height: 0;
+  -webkit-column-count: 5;
+  -webkit-column-gap: 0px;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 3;
+  column-gap: 0px;  
+
+  
+	
+}
+
+.favs {
+  max-width: 30vw;
+  max-height: auto;
+  background-color: whitesmoke;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+.uploadImg {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: flex-start;
 }
