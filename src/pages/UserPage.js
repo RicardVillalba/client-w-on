@@ -33,11 +33,9 @@ class UserPage extends Component {
             <div>
                 <div className="userdata">
                     <div className="userdataText">
-                    
-                <h4>user: {username}</h4>
+                <h4>{username}</h4>
                     <h4>email: {email}</h4>
                     <h4>tel: {tel}</h4>
-                    <h4>edit</h4>
                     </div>
                 </div>
                 <h4 className="favTitle">FAVORITES</h4>
