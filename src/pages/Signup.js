@@ -64,7 +64,6 @@ class Signup extends Component {
           />
           </div>
           <input type="submit" className="submit" value="Signup" />
-          <p className="redirectButton">Already have account?</p>
           <Link to="/login">
               {" "}
               <button className="redirectButton">Login</button>{" "}
