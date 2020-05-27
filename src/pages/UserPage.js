@@ -72,14 +72,15 @@ class UserPage extends Component {
                         favorites
                         ? favorites.map((eachFav, index) => {
                             return (
+                                <div>
                             <div key = {eachFav._id} >
                                 <div >
                              <img className="favs" src={eachFav.imageUrl} alt="favorite img" />
+                             <button onClick={()=>{this.removeFromFavorites(eachFav._id, index)}} className="addButton">Delete</button>
                                 </div>
-                                <div>
-                                <button onClick={()=>{this.removeFromFavorites(eachFav._id, index)}} className="addButton">remove from favorites</button>
-                                </div>
+                                
                             </div>
+                                </div>
                             )
                         })
                         : <p>loading...</p>
