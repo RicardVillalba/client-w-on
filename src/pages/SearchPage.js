@@ -94,8 +94,10 @@ class SearchPage extends Component {
         this.setState({ labels: labelsString });
       })
       .then(() => {
+        let googleKey = process.env.REACT_APP_CUSTOM_SEARCH_API
         Axios.get(
-          `https://www.googleapis.com/customsearch/v1?key=AIzaSyBj3pId_iDg4MGA2-5khVCzkEDHuUFv92s&cx=005967262815925650944:xavy6rlohqb&q=${this.state.labels}`
+          `https://www.googleapis.com/customsearch/v1?key=${googleKey}&cx=005967262815925650944:xavy6rlohqb&q=${this.state.labels}`
+          
         )
           .then((response) => {
             console.log(response.data.items);
@@ -121,7 +123,7 @@ class SearchPage extends Component {
           onSubmit={this.handleSubmit}
           action="/search"
           method="POST"
-          enctype="multipart/form-data"
+          encType="multipart/form-data"
         >
           <input
             onChange={this.handleChange}
@@ -129,8 +131,8 @@ class SearchPage extends Component {
             name="photo"
             id="img"
           />
-          <label for="img">add</label>
-          <button type="submit">search</button>
+          
+          <button type="submit" className="addButton" >search</button>
         </form>
         <div className="results">
           {this.state.results
@@ -145,9 +147,9 @@ class SearchPage extends Component {
                     {this.state.favorites.includes(
                       resultObj.pagemap.cse_image[0].src
                     ) ? (
-                      <button onClick={()=>{this.removeFromFavorites(resultObj.pagemap.cse_image[0].src)}}>remove from favorites</button>
+                      <button onClick={()=>{this.removeFromFavorites(resultObj.pagemap.cse_image[0].src)}} className="addButton">remove from favorites</button>
                     ) : (
-                      <button onClick={()=>{this.addToFavorites(resultObj.pagemap.cse_image[0].src)}}>add to favorites</button>
+                      <button onClick={()=>{this.addToFavorites(resultObj.pagemap.cse_image[0].src)}} className="addButton">add to favorites</button>
                     )}
                   </div>
                 );

@@ -28,7 +28,7 @@ class Navbar extends Component {
               </div>
             </Link>
              
-            <button onClick={logout}> Logout </button>
+            <button onClick={logout} className="logoutButton"> Logout </button>
             
           </div>
           

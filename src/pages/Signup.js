@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withAuth } from "./../lib/Auth";
 
-
 class Signup extends Component {
   state = { username: "", password: "", email: "", tel: "" };
 
@@ -24,52 +23,53 @@ class Signup extends Component {
     const { username, password, email, tel } = this.state;
     return (
       <div className="signup">
-      
-
         <form onSubmit={this.handleFormSubmit}>
           <div className="divform">
-          <label>Username:</label>
-          <input
-            type="text"
-            name="username"
-            value={username}
-            onChange={this.handleChange}
-          />
+            <label>Username:</label>
+            <input
+              type="text"
+              name="username"
+              className="inputForm"
+              value={username}
+              onChange={this.handleChange}
+            />
           </div>
           <div className="divform">
-          <label>Password:</label>
-          <input
-            type="password"
-            name="password"
-            value={password}
-            onChange={this.handleChange}
-          />
+            <label>Password:</label>
+            <input
+              type="password"
+              name="password"
+              className="inputForm"
+              value={password}
+              onChange={this.handleChange}
+            />
           </div>
           <div className="divform">
-          <label>email:</label>
-          <input
-            type="text"
-            name="email"
-            value={email}
-            onChange={this.handleChange}
-          />
+            <label>email:</label>
+            <input
+              type="text"
+              name="email"
+              className="inputForm"
+              value={email}
+              onChange={this.handleChange}
+            />
           </div>
           <div className="divform">
-          <label>tel:</label>
-          <input
-            type="text"
-            name="tel"
-            value={tel}
-            onChange={this.handleChange}
-          />
+            <label>tel:</label>
+            <input
+              type="text"
+              name="tel"
+              className="inputForm"
+              value={tel}
+              onChange={this.handleChange}
+            />
           </div>
           <input type="submit" className="submit" value="Signup" />
           <Link to="/login">
-              {" "}
-              <button className="redirectButton">Login</button>{" "}
-            </Link>
+            {" "}
+            <button className="redirectButton">Login</button>{" "}
+          </Link>
         </form>
-        
       </div>
     );
   }

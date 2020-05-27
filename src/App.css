@@ -76,6 +76,12 @@ button{
   font-family: 'Abril Fatface', cursive;
 }
 
+.logoutButton{
+  border: none;
+}
+.addButton {
+  border: none;
+}
 
 .login {
   font-family: 'Montserrat', sans-serif;
@@ -104,7 +110,7 @@ button{
 	justify-content: center;
 	align-items: center;
 	align-content: flex-start;
- padding-top: 8px;
+  padding-top: 8px;
   border-bottom: 1px solid gainsboro;
   width: 100vw;
   background-color: white;
@@ -133,7 +139,6 @@ input{
 
 .inputForm {
   font-family: 'Montserrat', sans-serif;
-  
   border: none;
   border-color: inherit;
   -webkit-box-shadow: none;
@@ -143,8 +148,9 @@ input{
 
 .redirectButton {
   font-family:"Raleway", sans-serif;
-  margin-left: 41.5vw;
+  margin-left: 44vw;
   margin-top: 3vh;
+  border: none;
 }
 
 .signup {
@@ -162,7 +168,7 @@ h4 {
   margin: 0;
 }
 .userdata {
-  font-family:  Helvetica, sans-serif;
+  font-family:  "Raleway", sans-serif;
   font-size: 3vw;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -176,9 +182,12 @@ h4 {
 }
 
 .userdataText {
-  margin-left: 5vw;
   
-  
+  display: flex;
+  flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  align-content: center;
 }
 
 .favTitle {
