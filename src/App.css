@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
 html,
 body {
   margin: 0;
@@ -12,14 +12,14 @@ body {
 }
 
 .logo {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: 8vw;
   height: 100vh;
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   align-content: center;
   text-decoration: none;
   animation-name: animatedLogo;
@@ -46,45 +46,45 @@ a {
 }
 a:visited {
   color: black;
-  }
-
- 
-
+}
 
 .navbarbutton {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   align-content: center;
- border-right: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
 }
 
 .navbarLinks {
   height: 35px;
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-	align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
   align-content: center;
 }
 
-button{
-  font-family: 'Abril Fatface', cursive;
+button {
+  font-family: "Abril Fatface", cursive;
+  background-color: transparent;
 }
 
-.logoutButton{
+.logoutButton {
   border: none;
+  background-color: transparent;
 }
 .addButton {
   border: none;
+  background-color: transparent;
 }
 
 .login {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -100,45 +100,42 @@ button{
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 3vh;
- 
 }
 
 .divform {
   display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-	align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
   padding-top: 8px;
   border-bottom: 1px solid gainsboro;
   width: 100vw;
   background-color: white;
   margin-bottom: 3vh;
- 
 }
 
 .submit {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   border: none;
   background-color: black;
   width: 40vw;
   height: 4vh;
   margin-left: 29vw;
-
 }
 input:focus {
   outline: none;
   background-color: white;
-  
 }
-input{
+input {
   background-color: white;
+  text-align: center;
 }
 
 .inputForm {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   border: none;
   border-color: inherit;
   -webkit-box-shadow: none;
@@ -147,14 +144,15 @@ input{
 }
 
 .redirectButton {
-  font-family:"Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin-left: 44vw;
   margin-top: 3vh;
   border: none;
+  background-color: transparent;
 }
 
 .signup {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -163,35 +161,32 @@ input{
   margin-top: 20vh;
 }
 
-
 h4 {
   margin: 0;
 }
 .userdata {
-  font-family:  "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 3vw;
   padding-bottom: 10px;
   padding-top: 10px;
   display: flex;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
   align-content: center;
-  border-top: 1px solid gainsboro;;
-  border-bottom: 1px solid gainsboro;;
-  
+  border-top: 1px solid gainsboro;
+  border-bottom: 1px solid gainsboro;
 }
 
 .userdataText {
-  
   display: flex;
   flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+  align-items: center;
   align-content: center;
 }
 
 .favTitle {
-  font-family: 'Abril Fatface', cursive;
+  font-family: "Abril Fatface", cursive;
   font-size: 3vw;
   display: flex;
   justify-content: center;
@@ -240,12 +235,11 @@ h4 {
   margin-top: 4px;
 }
 
-
 .uploadImg {
   display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
 }
